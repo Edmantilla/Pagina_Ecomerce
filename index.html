@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+        <nav class="sidebar__nav">
+        <ul class="sidebar__list">
+            <li class="sidebar__item sidebar__item--active">Inicio</li>
+            <li class="sidebar__item">Productos</li>
+            <li class="sidebar__item">Ofertas</li>
+            <li class="sidebar__item">Contacto</li>
+        </ul>
+        </nav>
+    </aside>
+
+    <div class="main">
+        <!-- Menú de navegación -->
+        <header class="nav">
+        <h1 class="nav__logo">Mi Tienda</h1>
+        <ul class="nav__menu">
+            <li class="nav__item nav__item--active">Inicio</li>
+            <li class="nav__item">Catálogo</li>
+            <li class="nav__item">Carrito</li>
+        </ul>
+        <div class="nav__cart-summary">
+            <span class="nav__cart-text">Carrito: 2 productos</span>
+        </div>
+        </header>
+
+        <!-- Alerta/Notificación -->
+        <div class="alert alert--success">
+        ¡Producto agregado al carrito!
+        </div>
+
+        <!-- Selector de categorías -->
+        <section class="categories">
+        <label class="categories__label" for="category-select">Categoría:</label>
+        <select class="categories__select" id="category-select">
+            <option value="todos">Todos</option>
+            <option value="electronica">Electrónica</option>
+            <option value="ropa">Ropa</option>
+            <option value="hogar">Hogar</option>
+        </select>
+        </section>
+
+        <!-- Tabs/Pestañas -->
+        <div class="tabs">
+        <button class="tabs__tab tabs__tab--active">Productos</button>
+        <button class="tabs__tab">Galería</button>
+        <button class="tabs__tab">Contacto</button>
+        </div>
+
+        <!-- Tarjeta de producto -->
+        <section class="product-card">
+        <img class="product-card__image" src="/imagenes/zapatos 4.webp" alt="Producto">
+        <h3 class="product-card__title">Nombre del Producto</h3>
+        <p class="product-card__description">Descripción breve del producto.</p>
+        <div class="product-card__rating">
+            <span class="product-card__star">&#9733;</span>
+            <span class="product-card__star">&#9733;</span>
+            <span class="product-card__star">&#9733;</span>
+            <span class="product-card__star">&#9734;</span>
+            <span class="product-card__star">&#9734;</span>
+            <span class="product-card__rating-value">3/5</span>
+        </div>
+        <button class="product-card__button product-card__button--buy">Comprar</button>
+        </section>
+
+        <!-- Galería de imágenes -->
+        <section class="gallery">
+        <img class="gallery__image" src="/imagenes/zapatos 2.webp" alt="Producto 1">
+        <img class="gallery__image" src="/imagenes/zapatos 3.webp" alt="Producto 2">
+        <img class="gallery__image" src="/imagenes/zapatos.webp" alt="Producto 3">
+        </section>
+
+        <!-- Tabla de datos -->
+        <section class="data-table">
+        <table class="data-table__table">
+            <thead>
+            <tr>
+                <th class="data-table__header">Producto</th>
+                <th class="data-table__header">Precio</th>
+                <th class="data-table__header">Stock</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="data-table__cell">Producto 1</td>
+                <td class="data-table__cell">$100</td>
+                <td class="data-table__cell">Disponible</td>
+            </tr>
+            <tr>
+                <td class="data-table__cell">Producto 2</td>
+                <td class="data-table__cell">$150</td>
+                <td class="data-table__cell">Agotado</td>
+            </tr>
+            </tbody>
+        </table>
+        </section>
+
+        <!-- Lista de tareas -->
+        <section class="todo">
+        <h2 class="todo__title">Lista de Tareas</h2>
+        <ul class="todo__list">
+            <li class="todo__item todo__item--done">Actualizar catálogo</li>
+            <li class="todo__item">Revisar pedidos</li>
+            <li class="todo__item">Responder mensajes</li>
+        </ul>
+        </section>
+
+        <!-- Formulario de contacto -->
+        <section class="contact">
+        <h2 class="contact__title">Contacto</h2>
+        <form class="contact__form">
+            <input class="contact__input" type="text" placeholder="Nombre">
+            <input class="contact__input" type="email" placeholder="Email">
+            <textarea class="contact__textarea" placeholder="Mensaje"></textarea>
+            <button class="contact__button" type="submit">Enviar</button>
+        </form>
+        </section>
+
+        <!-- Reproductor de video -->
+        <section class="video-player">
+        <video class="video-player__video" controls>
+            <source src="/videos/videoplayback.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+        </section>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <p class="footer__text">&copy; 2025 Mi Tienda. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
