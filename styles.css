@@ -172,6 +172,8 @@ body {
     box-shadow: var(--sombra);
     margin: var(--espaciado) 0;
     text-align: center;
+    /*se agrego esto*/
+    margin: var(--espaciado) auto;
 }
 
 .product-card__image {
