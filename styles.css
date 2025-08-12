@@ -221,6 +221,10 @@ body {
 /* Galería de imágenes */
 .gallery {
     margin: var(--espaciado) 0;
+    display: flex; /*esto*/
+    gap: 8px; /*esto*/
+    flex-wrap: wrap; /*esto*/
+    justify-content: center; /*y esto se agrego*/
 }
 
 .gallery__image {
