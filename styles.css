@@ -144,6 +144,8 @@ body {
 /* Tabs/Pestañas */
 .tabs {
     margin: var(--espaciado) 0;
+    display: flex;
+    gap: var(--espaciado);
 }
 
 .tabs__tab {
