@@ -76,12 +76,19 @@ body {
     color: var(--color-principal);
     }
 
-.nav__menu {
+/* .nav__menu {
     list-style: none;
     padding: 0;
     margin: var(--espaciado) 0 0 0;
     display: block;
-    }
+    } */
+
+/*Se corrigio esto*/
+.nav__menu { 
+    display: flex;
+    gap: var(--espaciado);
+    margin: 0;
+}
 
 .nav__item {
     display: inline-block;
