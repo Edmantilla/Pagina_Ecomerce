@@ -55,12 +55,21 @@ body {
     }
 
 /* Navegación */
-.nav {
+/* .nav {
     background: var(--color-blanco);
     padding: var(--espaciado);
     box-shadow: var(--sombra);
     display: block;
-    }
+    } */
+
+/*Se corrio esto*/
+/* Para responsividad */
+.nav { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
 
 .nav__logo {
     margin: 0;
